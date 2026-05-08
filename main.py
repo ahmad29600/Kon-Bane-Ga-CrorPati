@@ -20,49 +20,38 @@
 #     print("Wrong!")
 # print("You have scored", score ,"marks.")
 
-# KBC Inspired Quiz Game
 
 questions = [
-    ["What is the capital of India?", "Mumbai", "Delhi", "Kolkata", "Chennai", 2],
-
-    ["Which language is mainly used for AI?", "Python", "HTML", "CSS", "MS Word", 1],
-
-    ["Who is known as the Missile Man of India?", "Virat Kohli", "A.P.J Abdul Kalam", "Modi", "Einstein", 2],
-
-    ["Which planet is called the Red Planet?", "Earth", "Venus", "Mars", "Jupiter", 3],
-
-    ["How many states are there in India?", "28", "29", "30", "27", 1]
+    ["What does the white color in Pakistan flag represent?", "Agriculture", "Peace", "Minority", 3],
+    ["Who is known as Father of Nation of Pakistan?", "Quid-e-Azam", "Sir Syed Ahmad Khan", "Allama Iqbal", 1],
+    ["The national sport of Pakistan is?", "Cricket", "Hockey", "Basketball", 2],
 ]
 
-money = [1000, 5000, 10000, 50000, 100000]
-
+money = [1000, 2000, 3000]
 total_money = 0
 
-print("Welcome to KBC Python Edition")
-print("--------------------------------")
+print("---------------------")
+print("Welcome to KBC")
 
 for i in range(len(questions)):
 
     question = questions[i]
 
-    print("\nQuestion for Rs.", money[i])
+    print("\nQuestion for Rs. ", money[i])
     print(question[0])
 
-    print("1.", question[1])
-    print("2.", question[2])
-    print("3.", question[3])
-    print("4.", question[4])
+    print("1." , question[1])
+    print("2." , question[2])
+    print("3." , question[3])
 
-    answer = int(input("Enter your answer (1-4): "))
+    answer = int(input("Enter your answer (1-3): "))
 
-    if answer == question[5]:
-        print("Correct Answer!")
+    if answer == question[4]:
+        print("Your answer is correct!")
         total_money = money[i]
-
     else:
         print("Wrong Answer!")
-        print("Correct answer was:", question[question[5]])
+        print("Correct answer was", question[question[4]])
         break
-
-print("\nGame Over")
-print("You won Rs.", total_money)
+print("Game Over!")
+print("You won", total_money)

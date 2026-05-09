@@ -21,6 +21,7 @@
 # print("You have scored", score ,"marks.")
 
 
+
 questions = [
     ["What does the white color in Pakistan flag represent?", "Agriculture", "Peace", "Minority", 3],
     ["Who is known as Father of Nation of Pakistan?", "Quid-e-Azam", "Sir Syed Ahmad Khan", "Allama Iqbal", 1],
